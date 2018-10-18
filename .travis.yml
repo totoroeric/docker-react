@@ -1,9 +1,9 @@
 sudo: required
-
-language: "node_js"
+dist: trusty
+language: node_js
+node_js
   - "8.9"
 services:
   - docker
-
 before_install:
 	- docker build -t myreact -f Dockerfile.dev .
